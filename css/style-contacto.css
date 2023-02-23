@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    /* background-color: #BBBBBB; */
+    background: url('../img/portada/mailchimp-Hv9CS6KZayQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    min-height: 4.2rem;
+    align-self: flex-start;
+    flex: 1 0 calc(60% - 1rem);
+}
+nav ul{
+    display: flex;
+    flex-grow: 1;
+    margin-right: 4rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+nav ul li a{
+color: white;
+font-size: 1rem;
+font-weight: bold;
+text-transform: uppercase;
+/* margin: 0.5rem; */
+padding: 0.5rem;
+padding-top: 0.625rem;
+transition: 0.2s;
+margin: 1.2rem;
+}
+
+footer {
+    background: url(img/bg.jpg);
+    text-align: center;
+    padding: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.input-patron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    resize: none;
+}
+
+select{
+    display: block;
+    padding: 10px 20px;
+}
+
+.checkbox{
+    margin: 20px 10px 20px 0;
+}
+
+#submit{
+    width: 30%;
+    padding: 10px 0px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    background: orange;
+    border-radius: 20px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+    width: 30%;
+}
+
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+@media screen and (max-width:480px){
+    h1 {
+    text-align: center;
+    }
+
+    .caja, main{
+        width: 90%;
+    }
+
+    .input-patron, .table, #submit{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    nav{
+        position: static;
+        width: 60%;
+    }
+}
